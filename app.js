@@ -78,6 +78,7 @@ var taskCompleted=function(){
     console.log("Complete Task...");
 
     var listItem=this.parentNode;
+    listItem.children[1].classList.replace("task", "completed-label");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -87,6 +88,7 @@ var taskIncomplete=function(){
     console.log("Incomplete Task...");
 
     var listItem=this.parentNode;
+    listItem.children[1].classList.replace("completed-label", "task");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }

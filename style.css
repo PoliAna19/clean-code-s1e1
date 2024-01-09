@@ -122,9 +122,13 @@ button.delete img:hover {
 }
 
 /* Completed */
-.list-item.task {
+.completed-label {
     text-decoration: line-through;
     color: #888;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 347px;
 }
 
 /* Edit Task */
